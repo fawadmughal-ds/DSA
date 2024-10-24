@@ -35,9 +35,6 @@ class Stack:
             num+=1
             self.stack = self.stack.next
         return num 
-    
-
-
 s=Stack()
 s.push(9)
 s.push(19)
