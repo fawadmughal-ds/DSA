@@ -28,3 +28,14 @@ class Queue:
     def length(self):
         return len(self.queue)
     
+
+q=Queue()
+q.Enqueue(9)
+q.Enqueue(19)
+q.Enqueue(89)
+q.Enqueue(10)
+print(q.get_front())
+q.Dequeue()
+print(q.get_rear())
+print(q.get_front())
+print(q.length())
