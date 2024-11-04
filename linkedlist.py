@@ -136,3 +136,29 @@ class LinkList:
         while temp is not None:
             print(temp.info,end='-->')
             temp=temp.next
+
+
+def main():
+    if __name__ == "__main__":
+        obj = LinkList()
+        obj.insert_at_head(2)
+        obj.insert_at_head(2)
+        obj.insert_at_head(3)
+        obj.insert_at_head(4)
+        obj.insert_at_head(5)
+        obj.insert_at_tail(10)
+        obj.insert_at_tail(9)
+        obj.insert_at_tail(8)
+        obj.insert_at_tail(8)
+        obj.insert_at_tail(8)
+        obj.insert_at_tail(7)
+        obj.insert_after(8,13)
+        obj.insert_before(3,62)
+        obj.remove_from_head()
+        obj.remove_from_tail()
+        obj.remove_before(8)
+        obj.update(62,100)
+        obj.Search(2)
+        obj.remove(8)
+        obj.display()
+main()
