@@ -35,3 +35,13 @@ class MaxHeap:
             self.heap[index], self.heap[largest] = self.heap[largest], self.heap[index]
             self._heapify_down(largest)
 
+max_heap = MaxHeap()
+max_heap.insert(10)
+max_heap.insert(20)
+max_heap.insert(5)
+max_heap.insert(30)
+
+print("Extract Max:", max_heap.extract_max())
+print("Extract Max:", max_heap.extract_max())
+print("Extract Max:", max_heap.extract_max())
+print("Extract Max:", max_heap.extract_max())
