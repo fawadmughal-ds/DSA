@@ -128,3 +128,20 @@ class AVLTree:
         self.pre_order(root.left)
         self.pre_order(root.right)
 
+# Example usage
+avl_tree = AVLTree()
+root = None
+
+keys = [10, 20, 30, 40, 50, 25]
+
+for key in keys:
+    root = avl_tree.insert(root, key)
+
+print("Pre-order traversal of the constructed AVL tree is:")
+avl_tree.pre_order(root)
+print()
+
+root = avl_tree.delete(root, 10)
+print("Pre-order traversal after deletion of 10:")
+avl_tree.pre_order(root)
+print()
