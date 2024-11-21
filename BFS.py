@@ -18,4 +18,16 @@ def bfs(graph, start):
     
     return traversal_order
 
-
+if __name__ == "__main__":
+    graph = {
+        'A': ['B', 'C'],
+        'B': ['A', 'D', 'E'],
+        'C': ['A', 'F'],
+        'D': ['B'],
+        'E': ['B', 'F'],
+        'F': ['C', 'E']
+    }
+    
+    start_node = 'A'
+    result = bfs(graph, start_node)
+    print("BFS traversal starting from node", start_node, ":", result)
